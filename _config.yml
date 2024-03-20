@@ -30,7 +30,7 @@ twitter_username: goyal_tanushree
 github_username:  tinigoya
 
 # Build settings
-theme: minima
+theme: jekyll-theme-cayman
 plugins:
 - jekyll-feed
 - jekyll-remote-theme # add this line to the plugins list if you already have one
