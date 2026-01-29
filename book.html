@@ -28,69 +28,94 @@
     <![endif]-->
 	<style>
 	  body {
-	    margin: 0;
-	    padding: 0;
+	    background: white;
 	  }
-	  .book-wrapper {
-	    display: flex;
-	    width: 100vw;
-	    height: 100vh;
-	    overflow: hidden;
+	  .wrapper {
+	    max-width: 850px;
+	    margin: 0 auto;
+	    padding: 60px 40px;
 	  }
-	  .book-left {
-	    width: 40%;
-	    display: flex;
-	    align-items: center;
-	    justify-content: center;
-	    padding: 40px;
-	    background-color: #ffffff;
-	  }
-	  .book-left iframe {
-	    width: 100%;
-	    height: 100%;
-	    border: none;
-	  }
-	  .book-right {
-	    width: 60%;
-	    padding: 60px;
-	    overflow-y: auto;
-	    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-	    line-height: 1.6;
-	  }
-	  .book-right h2 {
-	    margin-top: 0;
+	  .book-title {
 	    font-size: 28px;
-	    font-weight: 600;
+	    font-weight: 700;
+	    text-align: center;
+	    margin: 0 0 15px 0;
+	    line-height: 1.3;
 	  }
-	  .book-right p {
-	    margin: 16px 0;
-	    font-size: 16px;
+	  .book-subtitle {
+	    font-size: 20px;
+	    font-weight: 400;
+	    color: #666;
+	    text-align: center;
+	    margin: 0 0 20px 0;
+	    line-height: 1.4;
 	  }
-	  .book-right hr {
+	  .book-meta {
+	    text-align: center;
+	    color: #666;
+	    margin-bottom: 50px;
+	    font-size: 15px;
+	  }
+	  hr {
 	    border: none;
 	    border-top: 1px solid #ddd;
-	    margin: 20px 0;
+	    margin: 40px 0;
+	  }
+	  .book-cover-container {
+	    text-align: center;
+	    margin: 50px 0;
+	  }
+	  .book-cover-container img {
+	    max-width: 100%;
+	    max-height: 500px;
+	    height: auto;
+	    display: inline-block;
+	  }
+	  .book-description {
+	    text-align: left;
+	    font-size: 16px;
+	    line-height: 1.8;
+	    color: #333;
+	    margin: 40px 0;
+	  }
+	  .book-description p {
+	    margin-bottom: 20px;
+	    text-align: justify;
+	  }
+	  .book-links {
+	    text-align: center;
+	    margin-top: 40px;
+	    font-size: 16px;
+	  }
+	  .book-links a {
+	    color: #0066cc;
+	    text-decoration: none;
+	    margin: 0 15px;
+	  }
+	  .book-links a:hover {
+	    text-decoration: underline;
 	  }
 	</style>
   </head>
   <body>
 
-    <div class="book-wrapper">
-      <div class="book-left">
-        <iframe src="img/book_cover.pdf#page=1" type="application/pdf"></iframe>
-      </div>
+    <div class="wrapper">
       
-      <div class="book-right">
-        <h2>Representation from Below: The Grassroots Origins of Women's Political Power in India</h2>
+      <div class="book-title">Representation from Below</div>
+      
+      <div class="book-subtitle">The Grassroots Origins of Women's Political Power in India</div>
 
-        <hr>
+      <div class="book-meta">Cambridge University Press, Studies in Comparative Politics Series<br>Expected publication: September 2026</div>
 
-        <p><i>Cambridge University Press, Studies in Comparative Politics Series</i></p>
+      <hr>
 
-        <p><b>Expected publication: September 2026</b></p>
+      <div class="book-cover-container">
+        <img src="img/book_cover.pdf" alt="Representation from Below book cover">
+      </div>
 
-        <hr>
+      <hr>
 
+      <div class="book-description">
         <p>After decades on the political sidelines, women are now at the heart of India's development agenda. Political parties place them front and center—shaping platforms, driving mobilization, and crafting policy and electoral appeals around their participation. <i>Representation from Below</i> traces how this transformation began far from the halls of power and took root through women's inclusion in local politics. It centers party organization as the conduit through which women in local politics become politically consequential.</p>
 
         <p>Drawing on fieldwork, survey data, and experimental research, the book shows how women, responding to career incentives, began building grassroots chapters of women's party wings and recruiting other women into them. In doing so, they expanded parties' organizational capacity to mobilize women voters, increasing their political participation. As women became electorally consequential, party leaders responded strategically—adapting platforms, expanding welfare schemes, and opening pathways to higher office.</p>
@@ -98,11 +123,14 @@
         <p>The theory challenges the view that clientelist parties obstruct women's inclusion or that women in deeply patriarchal systems lack agency. Instead, it shows how the very spaces and constraints long associated with women's marginalization—households, gender norms, and women-centered networks—become sources of leverage over parties. Women's inclusion is not only a matter of legitimacy or representation, but a source of organizational capacity that reshapes who parties mobilize and whom they ultimately serve.</p>
 
         <p>When women in local politics incorporate other women into parties, the ripple effects extend far beyond the local level, transforming national politics and offering lessons that resonate historically and well beyond India's borders.</p>
-
-        <hr>
-
-        <p><b>Coming soon:</b> Links to Cambridge University Press and Amazon</p>
       </div>
+
+      <hr>
+
+      <div class="book-links">
+        <b>Coming soon:</b> <a href="#">Cambridge University Press</a> | <a href="#">Amazon</a>
+      </div>
+
     </div>
 
   </body>
