@@ -27,60 +27,83 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 	<style>
-	  .book-container {
+	  body {
+	    margin: 0;
+	    padding: 0;
+	  }
+	  .book-wrapper {
 	    display: flex;
-	    gap: 40px;
-	    align-items: flex-start;
+	    width: 100vw;
+	    height: 100vh;
+	    overflow: hidden;
 	  }
-	  .book-cover {
-	    flex-shrink: 0;
-	    width: 300px;
+	  .book-left {
+	    width: 40%;
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    padding: 40px;
+	    background-color: #f5f5f5;
 	  }
-	  .book-cover img {
-	    width: 100%;
-	    height: auto;
+	  .book-left img {
+	    max-width: 100%;
+	    max-height: 100%;
+	    object-fit: contain;
 	  }
-	  .book-content {
-	    flex: 1;
+	  .book-right {
+	    width: 60%;
+	    padding: 60px;
+	    overflow-y: auto;
+	    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+	    line-height: 1.6;
+	  }
+	  .book-right h2 {
+	    margin-top: 0;
+	    font-size: 28px;
+	    font-weight: 600;
+	  }
+	  .book-right p {
+	    margin: 16px 0;
+	    font-size: 16px;
+	  }
+	  .book-right hr {
+	    border: none;
+	    border-top: 1px solid #ddd;
+	    margin: 20px 0;
 	  }
 	</style>
   </head>
   <body>
-    <div class="wrapper">
 
-      <section>
+    <div class="book-wrapper">
+      <div class="book-left">
+        <img src="img/book_cover.pdf" alt="Representation from Below: The Grassroots Origins of Women's Political Power in India">
+      </div>
+      
+      <div class="book-right">
+        <h2>Representation from Below: The Grassroots Origins of Women's Political Power in India</h2>
 
-<div class="book-container">
-  <div class="book-cover">
-    <img src="img/book_cover.pdf" alt="Representation from Below: The Grassroots Origins of Women's Political Power in India">
-  </div>
-  
-  <div class="book-content">
-    <h2>Representation from Below: The Grassroots Origins of Women's Political Power in India</h2>
+        <hr>
 
-    <hr>
+        <p><i>Cambridge University Press, Studies in Comparative Politics Series</i></p>
 
-    <p><i>Cambridge University Press, Studies in Comparative Politics Series</i></p>
+        <p><b>Expected publication: September 2026</b></p>
 
-    <p><b>Expected publication: September 2026</b></p>
+        <hr>
 
-    <hr>
+        <p>After decades on the political sidelines, women are now at the heart of India's development agenda. Political parties place them front and center—shaping platforms, driving mobilization, and crafting policy and electoral appeals around their participation. <i>Representation from Below</i> traces how this transformation began far from the halls of power and took root through women's inclusion in local politics. It centers party organization as the conduit through which women in local politics become politically consequential.</p>
 
-    <p>After decades on the political sidelines, women are now at the heart of India's development agenda. Political parties place them front and center—shaping platforms, driving mobilization, and crafting policy and electoral appeals around their participation. <i>Representation from Below</i> traces how this transformation began far from the halls of power and took root through women's inclusion in local politics. It centers party organization as the conduit through which women in local politics become politically consequential.</p>
+        <p>Drawing on fieldwork, survey data, and experimental research, the book shows how women, responding to career incentives, began building grassroots chapters of women's party wings and recruiting other women into them. In doing so, they expanded parties' organizational capacity to mobilize women voters, increasing their political participation. As women became electorally consequential, party leaders responded strategically—adapting platforms, expanding welfare schemes, and opening pathways to higher office.</p>
 
-    <p>Drawing on fieldwork, survey data, and experimental research, the book shows how women, responding to career incentives, began building grassroots chapters of women's party wings and recruiting other women into them. In doing so, they expanded parties' organizational capacity to mobilize women voters, increasing their political participation. As women became electorally consequential, party leaders responded strategically—adapting platforms, expanding welfare schemes, and opening pathways to higher office.</p>
+        <p>The theory challenges the view that clientelist parties obstruct women's inclusion or that women in deeply patriarchal systems lack agency. Instead, it shows how the very spaces and constraints long associated with women's marginalization—households, gender norms, and women-centered networks—become sources of leverage over parties. Women's inclusion is not only a matter of legitimacy or representation, but a source of organizational capacity that reshapes who parties mobilize and whom they ultimately serve.</p>
 
-    <p>The theory challenges the view that clientelist parties obstruct women's inclusion or that women in deeply patriarchal systems lack agency. Instead, it shows how the very spaces and constraints long associated with women's marginalization—households, gender norms, and women-centered networks—become sources of leverage over parties. Women's inclusion is not only a matter of legitimacy or representation, but a source of organizational capacity that reshapes who parties mobilize and whom they ultimately serve.</p>
+        <p>When women in local politics incorporate other women into parties, the ripple effects extend far beyond the local level, transforming national politics and offering lessons that resonate historically and well beyond India's borders.</p>
 
-    <p>When women in local politics incorporate other women into parties, the ripple effects extend far beyond the local level, transforming national politics and offering lessons that resonate historically and well beyond India's borders.</p>
+        <hr>
 
-    <hr>
-
-    <p><b>Coming soon:</b> Links to Cambridge University Press and Amazon</p>
-  </div>
-</div>
-
-      </section>
+        <p><b>Coming soon:</b> Links to Cambridge University Press and Amazon</p>
+      </div>
+    </div>
 
   </body>
 </html>
